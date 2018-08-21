@@ -1,0 +1,91 @@
+.black-swipe {
+    position: absolute;
+    height: 0;
+    width: 100%;
+    background-color: #ffffff;
+
+    z-index: 11;
+
+    animation-name: swipe-downwards;
+    animation-duration: 800ms;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
+}
+
+.content {
+    position: absolute;
+    height: 0;
+    z-index: 11;
+    width: 100%;
+
+    color: white;
+    background: #000000;
+
+    animation-name: swipe-downwards;
+    animation-duration: 800ms;
+    animation-delay: 700ms;
+    animation-fill-mode: forwards;
+}
+
+.content::after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    opacity: 0.3;
+    background: #000000 url('../images/background.jpg') no-repeat center center fixed;
+    content: "";
+}
+
+.content-wrapper {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 70vh;
+    width: 70vw;
+}
+
+.content-image {
+    width: 500px;
+    flex-shrink: 1;
+    justify-self: flex-start;
+}
+
+.content-text {
+    width: 800px;
+    flex: 1;
+}
+
+.content h1 {
+    margin: 0;
+    font-size: 100px;
+}
+
+.content h3 {
+    margin: 0;
+    font-size: 60px;
+}
+
+.content img {
+    filter: invert(100%);
+}
+
+.content p {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: italic;
+    font-size: 24px;
+}
+
+@keyframes swipe-downwards {
+    from {
+        height: 0;
+    }
+    to {
+        height: 100%;
+    }
+}

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg4540"
+   version="1.1"
+   viewBox="0 0 15.875 9.5250008"
+   height="36"
+   width="60">
+  <defs
+     id="defs4534" />
+  <metadata
+     id="metadata4537">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-287.47498)"
+     id="layer1">
+    <text
+       id="text5087"
+       y="294.62939"
+       x="-0.36305332"
+       style="font-style:normal;font-weight:normal;font-size:12.69999981px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-size:8.46666622px;stroke-width:0.26458332"
+         y="294.62939"
+         x="-0.36305332"
+         id="tspan5085">[   ]</tspan></text>
+    <text
+       id="text5091"
+       y="289.14224"
+       x="-7.7407932"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         id="tspan5097"
+         style="font-size:4.23333311px;stroke-width:0.26458332"
+         y="298.79773"
+         x="-7.7407932" /></text>
+    <text
+       id="text5103"
+       y="286.00851"
+       x="5.3320265"
+       style="font-style:normal;font-weight:normal;font-size:1062.56665039px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332"
+         y="1255.4203"
+         x="5.3320265"
+         id="tspan5101"></tspan></text>
+    <text
+       id="text5107"
+       y="288.83313"
+       x="5.6090059"
+       style="font-style:normal;font-weight:normal;font-size:1062.56665039px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-size:4.23333311px;stroke-width:0.26458332"
+         y="1258.2449"
+         x="5.6090059"
+         id="tspan5105" /></text>
+    <text
+       id="text5111"
+       y="285.83786"
+       x="-17.776693"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-size:4.23333311px;stroke-width:0.26458332"
+         y="289.70007"
+         x="-17.776693"
+         id="tspan5109" /></text>
+    <text
+       id="text5115"
+       y="291.64297"
+       x="2.5910361"
+       style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-size:2.82222223px;stroke-width:0.26458332"
+         y="291.64297"
+         x="2.5910361"
+         id="tspan5113">INSERT</tspan></text>
+    <text
+       id="text5119"
+       y="294.91956"
+       x="3.3209918"
+       style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-size:2.82222223px;stroke-width:0.26458332"
+         y="294.91956"
+         x="3.3209918"
+         id="tspan5117">IMAGE</tspan></text>
+  </g>
+</svg>
