@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import '../styles/App.css';
 import Landing from "./Landing";
 import Scroller from "./Scroller";
+import MeetTheGearheads from "./MeetTheGearheads";
 
 class App extends Component {
   render() {
@@ -10,9 +11,15 @@ class App extends Component {
         {
           name: "Home", component: <Landing/>
         }, {
-          name: "I'm", component: <div>I'm</div>
+          name: "Meat the Gearheads", anchor: 'meet', component: <MeetTheGearheads/>
         }, {
-          name: "Sam", component: <div>Sam</div>
+          name: "Sponsers", anchor: 'sponsers', component: <div>I'm</div>
+        }, {
+          name: "Team Departments", anchor: 'team', component: <div>I'm</div>
+        }, {
+          name: "About FIRST", anchor: 'first', component: <div>I'm</div>
+        }, {
+          name: "Contact Information", anchor: 'contact', component: <div></div>
         }
       ]}>
       </Scroller>

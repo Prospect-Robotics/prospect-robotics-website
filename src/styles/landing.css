@@ -54,6 +54,7 @@
     width: 500px;
     flex-shrink: 1;
     justify-self: flex-start;
+    margin-right: 16px;
 }
 
 .content-text {
@@ -71,14 +72,14 @@
     font-size: 60px;
 }
 
-.content img {
-    filter: invert(100%);
-}
-
 .content p {
     font-family: "IBM Plex Sans", sans-serif;
     font-style: italic;
     font-size: 24px;
+}
+
+.content a {
+    color: white;
 }
 
 @keyframes swipe-downwards {

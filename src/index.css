@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* view breakpoints */
-@media (max-width: 1830px) {
+@media (max-width: 1840px) {
     .content-image {
         width: 300px !important;
     }

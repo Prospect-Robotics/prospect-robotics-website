@@ -1,0 +1,67 @@
+#meet {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    color: white;
+}
+
+#meet .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /*transform: translateX(-30%);*/
+    /*opacity: 0;*/
+    /*transition: all 300ms;*/
+}
+
+#meet .background .img {
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    background-image: url('../images/meet.jpg');
+    background-size: cover;
+}
+
+#meet .background .gradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 70%;
+
+    background-image: linear-gradient(to right, rgba(0,0,0, 0), rgba(0,0,0, 1));
+}
+
+#meet .text {
+    position: absolute;
+    height: 70vh;
+    width: 60vw;
+    top: 15vh;
+    right: 15vh;
+}
+
+#meet .text h1 {
+    font-size: 36pt;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#meet .portrait {
+    width: 25%;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+#meet h3, p {
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* visible */
+
+/*#meet.visible .background {*/
+    /*opacity: 1;*/
+    /*transform: translateX(0);*/
+/*}*/
