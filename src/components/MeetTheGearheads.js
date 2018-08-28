@@ -3,7 +3,10 @@ import React, {Component} from 'react';
 import '../styles/meet.css';
 
 import meet from '../images/meet.jpg';
-import jack from '../images/jack.jpg';
+import jesse from '../images/jesse.jpg';
+import kyle from '../images/kyle.jpg';
+import siddharth from '../images/siddharth.jpg';
+import annie from '../images/annie.jpg';
 
 import Portrait from "./Portrait";
 
@@ -36,10 +39,10 @@ class MeetTheGearheads extends Component {
         <div className={"text"}>
           <h1>Meet the Gearheads</h1>
           <div className={"portraits"}>
-            <Portrait imageSrc={jack} name={"Jesse Dendy"} description={"President of Prospect Robotics"}/>
-            <Portrait imageSrc={jack} name={"Kyle Schumacher"} description={"Vice-President of Prospect Robotics"}/>
-            <Portrait imageSrc={jack} name={"Siddharth Singh"} description={"Secretary of Prospect Robotics"}/>
-            <Portrait imageSrc={jack} name={"Annie Lee"} description={"Treasurer of Prospect Robotics"}/>
+            <Portrait imageSrc={jesse} name={"Jesse Dendy"} description={"President of Prospect Robotics"}/>
+            <Portrait imageSrc={kyle} name={"Kyle Schumacher"} description={"Vice-President of Prospect Robotics"}/>
+            <Portrait imageSrc={siddharth} name={"Siddharth Singh"} description={"Secretary of Prospect Robotics"}/>
+            <Portrait imageSrc={annie} name={"Annie Lee"} description={"Treasurer of Prospect Robotics"}/>
           </div>
         </div>
       </div>

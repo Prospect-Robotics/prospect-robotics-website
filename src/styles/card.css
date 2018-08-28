@@ -1,0 +1,44 @@
+.card {
+    display: inline-block;
+    position: relative;
+    flex: 1;
+    max-width: 100%;
+    margin-right: 16px;
+    background: black;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: opacity 136ms;
+}
+
+.card .card-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    padding: 32px;
+}
+
+.card h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    transition: font-size 136ms, font-weight 136ms;
+}
+
+.card:hover img {
+    opacity: 1;
+}
+
+.card:hover .card-text {
+    font-size: 120%;
+}
+
+.card:hover h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
