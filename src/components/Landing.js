@@ -1,7 +1,7 @@
 import React from 'react';
 
 import '../styles/landing.css';
-import logo from '../images/logo.png';
+import logo from '../images/logo.svg';
 
 const Landing = () => (
   <div>

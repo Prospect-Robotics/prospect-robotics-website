@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import '../styles/team.css';
 
 import workshop from '../images/workshop.jpg';
+import software from '../images/software.jpg';
 import Card from "./Card";
 
 class Team extends Component {
@@ -36,7 +37,7 @@ class Team extends Component {
           <p>Our team is separated into multiple departments of different skills</p>
           <div className={"cards"}>
             <Card img={workshop} title={"Hardware"}/>
-            <Card img={workshop} title={"Software"}/>
+            <Card img={software} title={"Software"}/>
             <Card img={workshop} title={"CAD/3D Design"}/>
           </div>
         </div>

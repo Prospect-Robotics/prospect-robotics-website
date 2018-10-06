@@ -4,6 +4,9 @@ import Landing from "./Landing";
 import Scroller from "./Scroller";
 import MeetTheGearheads from "./MeetTheGearheads";
 import Team from "./Team";
+import First from "./First";
+import Contact from "./Contact";
+import Sponsors from "./Sponsors";
 
 class App extends Component {
   render() {
@@ -14,13 +17,13 @@ class App extends Component {
         }, {
           name: "Meat the Gearheads", anchor: 'meet', component: <MeetTheGearheads/>
         }, {
-          name: "Sponsers", anchor: 'sponsers', component: <div/>
+          name: "Sponsors", anchor: 'sponsors', component: <Sponsors/>
         }, {
           name: "Team Departments", anchor: 'team', component: <Team/>
         }, {
-          name: "About FIRST", anchor: 'first', component: <div>I'm</div>
+          name: "About FIRST", anchor: 'first', component: <First/>
         }, {
-          name: "Contact Information", anchor: 'contact', component: <div></div>
+          name: "Contact Information", anchor: 'contact', component: <Contact/>
         }
       ]}>
       </Scroller>

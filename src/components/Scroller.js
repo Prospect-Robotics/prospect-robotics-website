@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import '../styles/scroller.css';
-import logo from '../images/logo.png';
+import logo from '../images/logo.svg';
 
 import ScrollableAnchor from 'react-scrollable-anchor';
 // noinspection SpellCheckingInspection

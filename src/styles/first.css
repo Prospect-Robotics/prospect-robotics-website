@@ -1,0 +1,85 @@
+#first {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
+}
+
+#first::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    opacity: 0.3;
+
+    background: url("../images/first.JPG");
+    background-size: cover;
+
+    content: "";
+    z-index: 0;
+}
+
+#first .first-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    height: 70vh;
+    width: 60vh;
+
+    z-index: 5;
+}
+
+#first .first-content img {
+    display: block;
+    width: 60%;
+    margin: 0 auto 15px;
+}
+
+#first h3 {
+    font-size: 36pt;
+
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 100;
+}
+
+#first p {
+    font-size: 14pt;
+
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+
+    line-height: 150%;
+}
+
+#first a {
+    font-family: 'IBM Plex Sans', sans-serif;
+
+    font-style: italic;
+    color: white;
+}
+
+@media (max-width: 1300px) {
+    #first .first-content img {
+        width: 30%;
+    }
+
+    #first h3 {
+        font-size: 24pt;
+    }
+
+    #first p {
+        font-size: 12pt;
+    }
+}
