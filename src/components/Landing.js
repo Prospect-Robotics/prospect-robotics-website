@@ -14,9 +14,14 @@ const Landing = () => (
         <div className="content-text">
           <h1>Prospect Robotics</h1>
           <h3>FRC 2813</h3>
-          <p style={{display: "inline-block"}}>"make it happen" - Jack Taylor</p>
-          <p style={{display: "inline-block", marginLeft: 32}}>
+          <p>"make it happen" - Jack Taylor</p>
+          <p className={"landing-links"}>
             <a href="#about">about us</a>
+            <a href="#sponsors" style={{marginLeft:16}}>sponsors</a>
+            <a href="#team" style={{marginLeft:16}} id={"landing-team-link"}>departments</a>
+          </p>
+          <p className={"landing-links"}>
+            <a href="#first">first</a>
             <a href="#contact" style={{marginLeft:16}}>contact us</a>
           </p>
         </div>

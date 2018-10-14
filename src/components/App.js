@@ -15,7 +15,7 @@ class App extends Component {
         {
           name: "Home", component: <Landing/>
         }, {
-          name: "Meat the Gearheads", anchor: 'meet', component: <MeetTheGearheads/>
+          name: "Meet the Gearheads", anchor: 'meet', component: <MeetTheGearheads/>
         }, {
           name: "Sponsors", anchor: 'sponsors', component: <Sponsors/>
         }, {
