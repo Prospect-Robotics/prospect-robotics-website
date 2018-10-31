@@ -62,3 +62,10 @@
     font-size: 1em;
     color: #ffffff;
 }
+
+/* minimized scroller */
+@media (max-width: 800px) {
+    .page-location img, .page-location .name {
+        display: none;
+    }
+}

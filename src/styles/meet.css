@@ -32,10 +32,13 @@
     height: 100%;
     width: 70%;
 
-    background-image: linear-gradient(to right, rgba(0,0,0, 0), rgba(0,0,0, 1));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 
 #meet .text {
+    display: flex;
+    flex-direction: column;
+
     position: absolute;
     height: 70vh;
     width: 60vw;
@@ -44,12 +47,18 @@
 }
 
 #meet .text h1 {
+    flex-shrink: 1;
+
     font-size: 36pt;
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
+#meet .portraits {
+    flex: 1;
+    overflow: hidden;
+}
+
 #meet .portrait {
-    width: 25%;
     padding: 16px;
     box-sizing: border-box;
 }
@@ -59,9 +68,80 @@
     font-style: italic;
 }
 
+@media (min-width: 920px) {
+    #meet .portraits {
+        display: flex;
+    }
+
+    #meet .portrait {
+        flex: 1;
+    }
+}
+
+/* horizontal portrait */
+@media (max-width: 920px) and (min-height: 500px) {
+
+    #meet .portrait {
+        height: 25%;
+        max-height: 25%;
+        width: 100%;
+    }
+
+    #meet .portrait img {
+        display: block;
+        height: 100%;
+        width: auto;
+        border-radius: 50%;
+        margin-bottom: 0;
+
+        float: left;
+    }
+
+    #meet .portrait .portrait-text {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        padding-left: 16px;
+    }
+}
+
+@media (max-height: 500px) {
+    #meet h1 {
+        margin-top: 0;
+        font-size: 10vh !important;
+    }
+
+    #meet .text {
+        height: 90vh;
+    }
+
+    #meet .portraits {
+        display: flex;
+    }
+
+    #meet .portrait {
+        flex: 1;
+    }
+}
+
+@media (max-width: 500px) {
+    #meet h1 {
+        margin-top: 0;
+        font-size: 10vw !important;
+    }
+
+    #meet .text {
+        height: 80vh;
+        width: 80vw;
+        right: 32px;
+    }
+}
+
 /* visible */
 
 /*#meet.visible .background {*/
-    /*opacity: 1;*/
-    /*transform: translateX(0);*/
+/*opacity: 1;*/
+/*transform: translateX(0);*/
 /*}*/

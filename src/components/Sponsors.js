@@ -26,6 +26,11 @@ class Sponsors extends Component {
     return (
       <div id={"sponsors"} className={this.state.visible ? "visible" : ""}>
         <div className={"sponsors-body"}>
+          <div className={"sponsors-row"}>
+            <div>
+              <h1 style={{fontSize: "20vh"}}>Our Sponsors</h1>
+            </div>
+          </div>
           {SponsorImages.map((sponsorRow, i) => (
             <div className={"sponsors-row"} key={i}>
               {sponsorRow.map((sponsorImg, i) => (
