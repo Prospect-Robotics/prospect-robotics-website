@@ -40,6 +40,10 @@
     left: 200px;
 }
 
+#team h1 {
+    font-size: 36pt;
+}
+
 #team h3, p {
     font-weight: 500;
     font-style: italic;
@@ -49,7 +53,63 @@
     display: flex;
 }
 
+#team .text > p {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: italic;
+    margin-bottom: 15px;
+}
 
+@media (max-width: 1600px) {
+    #team .cards {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #team .card {
+        height: 30%;
+        width: 60%;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    #team h1 {
+        font-size: 24pt;
+    }
+
+    #team p {
+        font-size: 12pt;
+    }
+
+    #team .card {
+        width: 100%;
+    }
+
+    #team .card h1 {
+        font-size: 16pt;
+    }
+
+    #team .card-text {
+        padding: 16px;
+    }
+
+    #team .card-text > p {
+        display: none;
+    }
+
+    #team .card-text > .card-hover-text {
+        display: block;
+        font-size: 10pt;
+        opacity: 1;
+    }
+
+    #team .text {
+        top: 15px;
+        height: 80vh;
+        left: 48px;
+    }
+}
 
 /* visible */
 

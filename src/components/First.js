@@ -30,9 +30,9 @@ class First extends Component {
           <img src={firstLogo} alt=""/>
           <h3>What is FIRST Robotics Competition?</h3>
           <p>
-            Combining the excitement of sport with the rigors of science and technology.
-            We call FIRST Robotics Competition the ultimate Sport for the Mind.
-            High-school student participants call it “the hardest fun you’ll ever have.”
+            “FIRST® is the world’s leading child-serving nonprofit advancing science, technology, engineering, and math (STEM).
+            For 30 years, FIRST has been inspiring innovation and leadership by teaching STEM, teamwork, and
+            problem-solving skills through engaging, hands-on robotics challenges developed to ignite curiosity and passion in students in grades K-12.”
           </p>
           <a href="https://www.firstinspires.org/robotics/frc">click here to learn more</a>
         </div>

@@ -28,7 +28,7 @@ class Sponsors extends Component {
         <div className={"sponsors-body"}>
           <div className={"sponsors-row"}>
             <div>
-              <h1 style={{fontSize: "20vh"}}>Our Sponsors</h1>
+              <h1 style={{fontSize: "8vmin"}}>Our Sponsors</h1>
             </div>
           </div>
           {SponsorImages.map((sponsorRow, i) => (

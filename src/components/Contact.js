@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 
+import facebook from '../images/facebook.png';
+import instagram from '../images/instagram.png';
+
 import '../styles/contact.css'
 
 class Contact extends Component {
@@ -30,7 +33,13 @@ class Contact extends Component {
         </div>
         <div className={"text"}>
           <h1>Contact Us</h1>
-          <p></p>
+          <p style={{marginBottom: 25}}>You can contact us at <a style={{color: "white"}} href="mailto:prospectrobotics2813@gmail.com">prospectrobotics2813@gmail.com</a> or at our social media handles.</p>
+          <a href="https://www.facebook.com/team2813/" target={"_blank"} style={{marginRight: 25}}>
+            <img src={facebook} alt="Facebook" height={100}/>
+          </a>
+          <a href="https://twitter.com/frc2813" target={"_blank"}>
+            <img src={instagram} alt="instagram" height={100}/>
+          </a>
         </div>
       </div>
     )

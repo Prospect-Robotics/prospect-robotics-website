@@ -12,6 +12,7 @@
 }
 
 .card img {
+    height: 100%;
     width: 100%;
     object-fit: cover;
     opacity: 0.8;
@@ -26,9 +27,24 @@
     padding: 32px;
 }
 
-.card h1, h2, h3, h4, h5, h6 {
+.card h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     transition: font-size 136ms, font-weight 136ms;
+}
+
+.card h1 {
+    font-size: 28pt !important;
+}
+
+.card p, .card-hover-text {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: italic;
+}
+
+.card-hover-text {
+    margin-top: 5px;
+    opacity: 0;
+    transition: opacity 300ms;
 }
 
 .card:hover img {
@@ -37,6 +53,10 @@
 
 .card:hover .card-text {
     font-size: 120%;
+}
+
+.card:hover .card-hover-text {
+    opacity: 1;
 }
 
 .card:hover h1, h2, h3, h4, h5, h6 {
