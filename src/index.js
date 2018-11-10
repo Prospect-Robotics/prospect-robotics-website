@@ -4,7 +4,7 @@ import './index.css';
 import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 
-window.screen.orientation.lock("portrait-primary");
+// window.screen.orientation.lock("portrait-primary");
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

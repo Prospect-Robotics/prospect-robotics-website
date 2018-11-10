@@ -14,14 +14,12 @@
 
 .content {
     position: absolute;
-    height: 0;
+    height: 100%;
     z-index: 11;
     width: 100%;
 
     color: white;
     background: #000000;
-
-    height: 100%;
 }
 
 .content::after {
