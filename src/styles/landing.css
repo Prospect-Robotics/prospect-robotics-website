@@ -21,10 +21,7 @@
     color: white;
     background: #000000;
 
-    animation-name: swipe-downwards;
-    animation-duration: 800ms;
-    animation-delay: 700ms;
-    animation-fill-mode: forwards;
+    height: 100%;
 }
 
 .content::after {
@@ -83,15 +80,6 @@
 
 .landing-links {
     display: block;
-}
-
-@keyframes swipe-downwards {
-    from {
-        height: 0;
-    }
-    to {
-        height: 100%;
-    }
 }
 
 @media (min-width: 1520px) {
