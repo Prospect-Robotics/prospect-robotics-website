@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import facebook from '../images/facebook.png';
 import instagram from '../images/instagram.png';
+import twitter from '../images/twitter.png';
 
 import '../styles/contact.css'
 
@@ -37,8 +38,11 @@ class Contact extends Component {
           <a href="https://www.facebook.com/team2813/" target={"_blank"} style={{marginRight: 25}}>
             <img src={facebook} alt="Facebook" height={100}/>
           </a>
-          <a href="https://twitter.com/frc2813" target={"_blank"}>
+          <a href="https://www.instagram.com/frc2813/" target={"_blank"}>
             <img src={instagram} alt="instagram" height={100}/>
+          </a>
+          <a href="https://twitter.com/frc2813" target={"_blank"}>
+            <img src={twitter} alt="twitter" height={100}/>
           </a>
         </div>
       </div>

@@ -33,9 +33,9 @@ export default class Scroller extends Component {
       <div>
         {this.props.pages.map((page, i) => {
             return page.anchor !== undefined ? (
-              <ScrollableAnchor id={page.anchor} key={i}>
-                <div className={"page"}>{page.component}</div>
-              </ScrollableAnchor>) : (
+              <div className={"page"} key={i}>
+                {page.component}
+              </div>) : (
               <div className={"page"} key={i}>
                 {page.component}
               </div>
@@ -57,3 +57,7 @@ export default class Scroller extends Component {
     );
   }
 }
+
+// <ScrollableAnchor id={page.anchor} key={i}>
+//                 <div className={"page"}>{page.component}</div>
+//               </ScrollableAnchor>
