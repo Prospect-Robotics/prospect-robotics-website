@@ -5,7 +5,7 @@ import '../styles/team.css';
 import workshop from '../images/workshop.jpg';
 import software from '../images/software.jpg';
 import cad from '../images/cad.jpg';
-import Card from "./Card";
+import TeamCard from "./TeamCard";
 
 class Team extends Component {
   constructor() {
@@ -36,10 +36,10 @@ class Team extends Component {
         <div className={"text"}>
           <h1>Team Departments</h1>
           <p>Our team is separated into multiple departments of different skills</p>
-          <div className={"cards"}>
-            <Card img={workshop} title={"Hardware"} caption={"learn more..."} hoverText={"The Gearheads hardware team is trained to use machines to craft precision components that help our robot perform to high standards."}/>
-            <Card img={software} title={"Software"} caption={"learn more..."} hoverText={"Our software team are experts in Java and can always be counted on to troubleshoot mid-competition when needed."}/>
-            <Card img={cad} title={"CAD/3D Design"} caption={"learn more..."} hoverText={"The CAD/3D Design department manages the difficult job of taking a competition concept from theory to reality in record time."}/>
+          <div className={"team-cards"}>
+            <TeamCard img={workshop} title={"Hardware"} caption={"learn more..."} hoverText={"The Gearheads hardware team is trained to use machines to craft precision components that help our robot perform to high standards."}/>
+            <TeamCard img={software} title={"Software"} caption={"learn more..."} hoverText={"Our software team are experts in Java and can always be counted on to troubleshoot mid-competition when needed."}/>
+            <TeamCard img={cad} title={"CAD/3D Design"} caption={"learn more..."} hoverText={"The CAD/3D Design department manages the difficult job of taking a competition concept from theory to reality in record time."}/>
           </div>
         </div>
       </div>

@@ -2,33 +2,34 @@ import React, {Component} from 'react';
 import '../styles/App.css';
 import Landing from "./Landing";
 import Scroller from "./Scroller";
-import MeetTheGearheads from "./MeetTheGearheads";
+import Meet from "./Meet";
 import Team from "./Team";
 import First from "./First";
 import Contact from "./Contact";
 import Sponsors from "./Sponsors";
+import Media from "./Media";
 
 class App extends Component {
-  render() {
-    return (
-      <Scroller pages={[
-        {
-          name: "Home", component: <Landing/>
-        }, {
-          name: "Meet the Gearheads", anchor: 'meet', component: <MeetTheGearheads/>
-        }, {
-          name: "Sponsors", anchor: 'sponsors', component: <Sponsors/>
-        }, {
-          name: "Team Departments", anchor: 'team', component: <Team/>
-        }, {
-          name: "About FIRST", anchor: 'first', component: <First/>
-        }, {
-          name: "Contact Information", anchor: 'contact', component: <Contact/>
-        }
-      ]}>
-      </Scroller>
-    );
-  }
+    render() {
+        return (
+            <Scroller pages={[
+                {
+                    name: "Home", id: "landing", component: <Landing/>
+                }, {
+                    name: "Meet the Gearheads", id: "meet", anchor: 'meet', component: <Meet/>
+                }, {
+                    name: "Sponsors", id: "sponsors", anchor: 'sponsors', component: <Sponsors/>
+                }, {
+                    name: "Team Departments", id: "team", anchor: 'team', component: <Team/>
+                }, {
+                    name: "About FIRST", id: "first", anchor: 'first', component: <First/>
+                }, {
+                    name: "Contact Information", id: "contact", anchor: 'contact', component: <Contact/>
+                }
+            ]}>
+            </Scroller>
+        );
+    }
 }
 
 export default App;

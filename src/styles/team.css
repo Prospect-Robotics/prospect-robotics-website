@@ -1,35 +1,13 @@
+#team-page {
+    background-image: url('../images/team.jpg');
+}
+
 #team {
     position: relative;
     height: 100%;
     width: 100%;
 
     color: white;
-}
-
-#team .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
-
-#team .background .img {
-    height: 100%;
-    width: 100%;
-    opacity: 0.3;
-    background-image: url('../images/team.jpg');
-    background-size: cover;
-}
-
-#team .background .gradient {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 70%;
-
-    background-image: linear-gradient(to left, rgba(0,0,0, 0), rgba(0,0,0, 1));
 }
 
 #team .text {
@@ -49,7 +27,7 @@
     font-style: italic;
 }
 
-#team .cards {
+#team .team-cards {
     display: flex;
 }
 
@@ -60,12 +38,12 @@
 }
 
 @media (max-width: 1600px) {
-    #team .cards {
+    #team .team-cards {
         flex-direction: column;
         height: 100%;
     }
 
-    #team .card {
+    #team .team-card {
         height: 30%;
         width: 60%;
         overflow: hidden;
@@ -82,23 +60,23 @@
         font-size: 12pt;
     }
 
-    #team .card {
+    #team .team-card {
         width: 100%;
     }
 
-    #team .card h1 {
+    #team .team-card h1 {
         font-size: 16pt;
     }
 
-    #team .card-text {
+    #team .team-card-text {
         padding: 16px;
     }
 
-    #team .card-text > p {
+    #team .team-card-text > p {
         display: none;
     }
 
-    #team .card-text > .card-hover-text {
+    #team .team-card-text > .team-card-hover-text {
         display: block;
         font-size: 10pt;
         opacity: 1;

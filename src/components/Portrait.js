@@ -1,15 +1,18 @@
 import React from 'react';
 
 import '../styles/portrait.css';
+import {Col, Row} from "react-flexbox-grid";
 
 const Portrait = ({imageSrc, name, description, style}) => (
-  <div className={"portrait"} style={style}>
-    <img src={imageSrc} alt={name}/>
-    <div className={"portrait-text"}>
+  <Row className={"portrait"} middle="xs" style={style}>
+    <Col xs={4} md={12}>
+      <img src={imageSrc} alt={name}/>
+    </Col>
+    <Col xs={8} md={12} className={"portrait-text"}>
       <h3>{name}</h3>
       <p>{description}</p>
-    </div>
-  </div>
+    </Col>
+  </Row>
 );
 
 export default Portrait;

@@ -3,12 +3,11 @@ import React, {Component} from 'react';
 import '../styles/scroller.css';
 import logo from '../images/logo.svg';
 
-import ScrollableAnchor from 'react-scrollable-anchor';
 // noinspection SpellCheckingInspection
 export default class Scroller extends Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       currentPage: 0
@@ -32,14 +31,7 @@ export default class Scroller extends Component {
     return (
       <div>
         {this.props.pages.map((page, i) => {
-            return page.anchor !== undefined ? (
-              <div className={"page"} key={i}>
-                {page.component}
-              </div>) : (
-              <div className={"page"} key={i}>
-                {page.component}
-              </div>
-            )
+            return <div key={i} className="page" id={page.id + "-page"}>{page.component}</div>
           }
         )}
         <div className={"page-location"}>

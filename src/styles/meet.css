@@ -1,66 +1,14 @@
+#meet-page {
+    background-image: url('../images/meet.jpg')
+}
+
 #meet {
     position: relative;
-    height: 100%;
+    max-width: 1280px;
     width: 100%;
 
-    color: white;
-}
-
-#meet .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /*transform: translateX(-30%);*/
-    /*opacity: 0;*/
-    /*transition: all 300ms;*/
-}
-
-#meet .background .img {
-    height: 100%;
-    width: 100%;
-    opacity: 0.3;
-    background-image: url('../images/meet.jpg');
-    background-size: cover;
-}
-
-#meet .background .gradient {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 70%;
-
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-}
-
-#meet .text {
-    display: flex;
-    flex-direction: column;
-
-    position: absolute;
-    height: 70vh;
-    width: 60vw;
-    top: 15vh;
-    right: 15vh;
-}
-
-#meet .text h1 {
-    flex-shrink: 1;
-
-    font-size: 36pt;
-    font-family: 'IBM Plex Sans', sans-serif;
-}
-
-#meet .portraits {
-    flex: 1;
-    overflow: hidden;
-}
-
-#meet .portrait {
-    padding: 16px;
-    box-sizing: border-box;
+    padding: 15vh 64px 5vw 0;
+    float: right;
 }
 
 #meet h3, p {
@@ -68,80 +16,24 @@
     font-style: italic;
 }
 
-@media (min-width: 920px) {
-    #meet .portraits {
-        display: flex;
-    }
-
-    #meet .portrait {
-        flex: 1;
-    }
+#meet h3 {
+    font-size: 2em;
 }
 
-/* horizontal portrait */
-@media (max-width: 920px) and (min-height: 500px) {
-
-    #meet .portrait {
-        height: 25%;
-        max-height: 25%;
-        width: 100%;
-    }
-
-    #meet .portrait img {
-        display: block;
-        height: 100%;
-        width: auto;
-        border-radius: 50%;
-        margin-bottom: 0;
-
-        float: left;
-    }
-
-    #meet .portrait .portrait-text {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        justify-content: center;
-        padding-left: 16px;
-    }
+#meet p {
+    font-size: 1em;
 }
 
-@media (max-height: 500px) {
-    #meet h1 {
-        margin-top: 0;
-        font-size: 10vh !important;
-    }
+@media (max-width: 768px) {
 
-    #meet .text {
-        height: 90vh;
-    }
-
-    #meet .portraits {
-        display: flex;
-    }
-
-    #meet .portrait {
-        flex: 1;
-    }
 }
 
-@media (max-width: 500px) {
-    #meet h1 {
-        margin-top: 0;
-        font-size: 10vw !important;
+@media (min-width: 768px) and (max-width: 1280px) {
+    #meet h3 {
+        font-size: 2.5vw;
     }
 
-    #meet .text {
-        height: 80vh;
-        width: 80vw;
-        right: 32px;
+    #meet p {
+        font-size: 1.5vw;
     }
 }
-
-/* visible */
-
-/*#meet.visible .background {*/
-/*opacity: 1;*/
-/*transform: translateX(0);*/
-/*}*/

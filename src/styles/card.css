@@ -1,4 +1,4 @@
-.card {
+.team-card {
     display: inline-block;
     position: relative;
     flex: 1;
@@ -7,11 +7,11 @@
     background: black;
 }
 
-.card:last-child {
+.team-card:last-child {
     margin-right: 0;
 }
 
-.card img {
+.team-card img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -19,7 +19,7 @@
     transition: opacity 136ms;
 }
 
-.card .card-text {
+.team-card .team-card-text {
     position: absolute;
     top: 0;
     left: 0;
@@ -27,38 +27,38 @@
     padding: 32px;
 }
 
-.card h1, h2, h3, h4, h5, h6, p {
+.team-card h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     transition: font-size 136ms, font-weight 136ms;
 }
 
-.card h1 {
+.team-card h1 {
     font-size: 28pt !important;
 }
 
-.card p, .card-hover-text {
+.team-card p, .team-card-hover-text {
     font-family: "IBM Plex Sans", sans-serif;
     font-style: italic;
 }
 
-.card-hover-text {
+.team-card-hover-text {
     margin-top: 5px;
     opacity: 0;
     transition: opacity 300ms;
 }
 
-.card:hover img {
+.team-card:hover img {
     opacity: 1;
 }
 
-.card:hover .card-text {
+.team-card:hover .team-card-text {
     font-size: 120%;
 }
 
-.card:hover .card-hover-text {
+.team-card:hover .team-card-hover-text {
     opacity: 1;
 }
 
-.card:hover h1, h2, h3, h4, h5, h6 {
+.team-card:hover h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }

@@ -1,35 +1,13 @@
+#contact-page {
+    background-image: url('../images/contact.jpg');
+}
+
 #contact {
     position: relative;
     height: 100%;
     width: 100%;
 
     color: white;
-}
-
-#contact .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
-
-#contact .background .img {
-    height: 100%;
-    width: 100%;
-    opacity: 0.3;
-    background-image: url('../images/contact.jpg');
-    background-size: cover;
-}
-
-#contact .background .gradient {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 70%;
-
-    background-image: linear-gradient(to left, rgba(0,0,0, 0), rgba(0,0,0, 1));
 }
 
 #contact .text {

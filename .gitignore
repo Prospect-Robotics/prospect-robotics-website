@@ -13,6 +13,9 @@
 
 /.idea
 
+# gallery
+/gallery
+
 # misc
 .DS_Store
 .env.local
