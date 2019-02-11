@@ -8,8 +8,8 @@ import cad from '../images/cad.jpg';
 import TeamCard from "./TeamCard";
 
 class Team extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       visible: false

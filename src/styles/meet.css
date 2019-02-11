@@ -8,7 +8,7 @@
     width: 100%;
 
     padding: 15vh 64px 5vw 0;
-    float: right;
+    margin-left: auto;
 }
 
 #meet h3, p {
@@ -24,16 +24,34 @@
     font-size: 1em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+    #meet {
+        padding-left: 24vw;
+    }
 
-}
-
-@media (min-width: 768px) and (max-width: 1280px) {
     #meet h3 {
-        font-size: 2.5vw;
+        font-size: 1.4em;
     }
 
     #meet p {
-        font-size: 1.5vw;
+        font-size: 0.9em;
+    }
+
+    #meet .row {
+        margin: 16px 0;
+    }
+}
+
+@media (max-width: 568px) {
+    #meet {
+        padding-left: 16px;
+    }
+
+    #meet h3 {
+        font-size: 1.4em;
+    }
+
+    #meet p {
+        font-size: 0.9em;
     }
 }

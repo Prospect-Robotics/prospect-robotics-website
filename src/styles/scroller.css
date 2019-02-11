@@ -95,7 +95,7 @@
 }
 
 /* minimized scroller */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .page {
         padding-left: 48px;
     }
@@ -103,5 +103,6 @@
     .page-location img, .page-location .name {
         transform: translateX(-50px);
         opacity: 0;
+        pointer-events: none;
     }
 }

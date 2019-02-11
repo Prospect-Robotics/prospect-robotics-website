@@ -35,16 +35,16 @@ class Meet extends Component {
       <div id={"meet"} className={this.state.visible ? "visible" : ""}>
         <h1>Meet the Gearheads</h1>
         <Row className={"portraits"}>
-          <Col xs={12} md={3}>
+          <Col xs={12} lg={3}>
             <Portrait imageSrc={jesse} name={"Jesse Dendy"} description={"President of Prospect Robotics"}/>
           </Col>
-          <Col xs={12} md={3}>
+          <Col xs={12} lg={3}>
             <Portrait imageSrc={kyle} name={"Kyle Schumacher"} description={"Vice-President of Prospect Robotics"}/>
           </Col>
-          <Col xs={12} md={3}>
+          <Col xs={12} lg={3}>
             <Portrait imageSrc={siddharth} name={"Siddharth Singh"} description={"Secretary of Prospect Robotics"}/>
           </Col>
-          <Col xs={12} md={3}>
+          <Col xs={12} lg={3}>
             <Portrait imageSrc={annie} name={"Annie Lee"} description={"Treasurer of Prospect Robotics"}/>
           </Col>
         </Row>

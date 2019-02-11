@@ -20,16 +20,24 @@
     padding: 48px 0;
 }
 
-@media (max-width: 1300px) {
-    #sponsors .sponsors-content img {
-        width: 30%;
+#sponsors img {
+    max-height: 384px;
+}
+
+@media (max-width: 768px) {
+    #sponsors {
+        padding: 48px 15vw;
     }
 
-    #sponsors h3 {
-        font-size: 24pt;
+    #sponsors {
+        padding: 48px;
     }
 
-    #sponsors p {
-        font-size: 12pt;
+    #sponsors .row {
+        padding: 0;
+    }
+
+    #sponsors .col-xs-12 {
+        margin: 16px;
     }
 }

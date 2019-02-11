@@ -26,10 +26,13 @@ class Sponsors extends Component {
   render() {
     return (
       <div id={"sponsors"} className={this.state.visible ? "visible" : ""}>
+        <h1>
+          Our Sponsors
+        </h1>
         {SponsorImages.map((sponsorRow, i) => (
           <Row center="xs" middle="xs" key={i}>
             {sponsorRow.map((sponsorImg, i) => (
-              <Col xs={12} md={12 / sponsorRow.length}>
+              <Col xs={12 / sponsorRow.length}>
                 <img src={"/sponsors/" + sponsorImg} key={i} style={{width: "100%"}}/>
               </Col>
             ))}
