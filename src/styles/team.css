@@ -8,18 +8,8 @@
     width: 100%;
 
     color: white;
-}
 
-#team .text {
-    position: absolute;
-    height: 70vh;
-    width: 80vw;
-    top: 10vh;
-    left: 200px;
-}
-
-#team h1 {
-    font-size: 36pt;
+    padding: 16vh 8vw 8vh 48px;
 }
 
 #team h3, p {
@@ -28,70 +18,15 @@
 }
 
 #team .team-cards {
-    display: flex;
+    align-content: stretch;
 }
 
-#team .text > p {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-style: italic;
-    margin-bottom: 15px;
+#team .team-cards .col-xs-12 {
+    flex-grow: 1;
 }
 
-@media (max-width: 1600px) {
-    #team .team-cards {
-        flex-direction: column;
-        height: 100%;
-    }
-
+@media (max-width: 768px) {
     #team .team-card {
-        height: 30%;
-        width: 60%;
-        overflow: hidden;
-        margin-bottom: 30px;
+        margin-bottom: 32px ;
     }
 }
-
-@media (max-width: 800px) {
-    #team h1 {
-        font-size: 24pt;
-    }
-
-    #team p {
-        font-size: 12pt;
-    }
-
-    #team .team-card {
-        width: 100%;
-    }
-
-    #team .team-card h1 {
-        font-size: 16pt;
-    }
-
-    #team .team-card-text {
-        padding: 16px;
-    }
-
-    #team .team-card-text > p {
-        display: none;
-    }
-
-    #team .team-card-text > .team-card-hover-text {
-        display: block;
-        font-size: 10pt;
-        opacity: 1;
-    }
-
-    #team .text {
-        top: 15px;
-        height: 80vh;
-        left: 48px;
-    }
-}
-
-/* visible */
-
-/*#team.visible .background {*/
-    /*opacity: 1;*/
-    /*transform: translateX(0);*/
-/*}*/

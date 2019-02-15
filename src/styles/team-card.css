@@ -1,0 +1,38 @@
+.team-card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: white;
+    border-radius: 32px;
+
+    color: black;
+    overflow: hidden;
+}
+
+.team-card .row {
+    margin: 0;
+}
+
+.team-card .col-xs-12:first-child {
+    position: relative;
+    padding-bottom: 56.25%;
+    background-size: cover;
+    background-position: center;
+}
+
+.team-card .col-xs-12:last-child {
+    padding: 32px;
+}
+
+.team-card h1 {
+    font-size: 32pt;
+    margin: 0 0 16px;
+}
+
+.team-card p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+
+    font-size: 17px;
+    font-style: italic;
+}

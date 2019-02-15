@@ -1,15 +1,18 @@
 import React from 'react';
 
-import '../styles/card.css';
+import '../styles/team-card.css';
+import {Col, Row} from "react-flexbox-grid";
 
-const TeamCard = ({img, title, caption, hoverText}) => (
+const TeamCard = ({img, title, caption, text}) => (
   <div className="team-card">
-    <div className={"team-card-text"}>
-      <h1>{title}</h1>
-      <p>{caption}</p>
-      <p className={"team-card-hover-text"}>{hoverText}</p>
-    </div>
-    <img src={img} alt={title}/>
+    <Row>
+      <Col xs={12} style={{backgroundImage: `url(${img})`}}>
+      </Col>
+      <Col xs={12}>
+        <h1>{title}</h1>
+        <p>{text}</p>
+      </Col>
+    </Row>
   </div>
 );
 
