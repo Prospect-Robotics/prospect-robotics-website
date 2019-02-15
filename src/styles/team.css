@@ -18,11 +18,7 @@
 }
 
 #team .team-cards {
-    align-content: stretch;
-}
-
-#team .team-cards .col-xs-12 {
-    flex-grow: 1;
+    align-items: stretch;
 }
 
 @media (max-width: 768px) {
