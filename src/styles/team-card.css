@@ -14,10 +14,11 @@
 }
 
 .team-card .col-xs-12:first-child {
-    position: relative;
-    padding-bottom: 56.25%;
-    background-size: cover;
-    background-position: center;
+    padding: 0;
+}
+
+.team-card img {
+    width: 100%;
 }
 
 .team-card .col-xs-12:last-child {

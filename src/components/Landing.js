@@ -9,6 +9,7 @@ import Carousel from 'nuka-carousel';
 import image1 from '../images/media/20180222-IMG_9506.jpg';
 import image2 from '../images/media/20180331-IMG_5836.jpg';
 import image3 from '../images/media/20180406-IMG_8291.jpg';
+import AspectRatio from "./AspectRatio";
 
 // todo use nuka-coursel
 
@@ -20,25 +21,6 @@ class Landing extends Component {
       height: 0,
       width: 0
     }
-  }
-
-  onResize() {
-    let width = this.container.offsetWidth;
-    console.log(this.container.offsetWidth);
-    this.setState({
-      height: width * (9 / 16),
-      width
-    })
-  }
-
-  componentDidMount() {
-    this.container = document.getElementById('landing-gallery');
-    this.onResize();
-    window.addEventListener("resize", this.onResize.bind(this));
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.onResize.bind(this));
   }
 
   render() {
@@ -66,14 +48,16 @@ class Landing extends Component {
           </Col>
         </Row>
         <Row style={{marginTop: 48}}>
-          <Col xs={12} md={6} lg={4} lgOffset={4} id={"landing-gallery"} style={{marginBottom: 24}}>
-            <Carousel style={{height, width}}>
-              <img src={image1} alt={""}/>
-              <img src={image2} alt={""}/>
-              <img src={image3} alt={""}/>
-            </Carousel>
+          <Col xs={12} md={6} lg={4} lgOffset={3} id={"landing-gallery"} style={{marginBottom: 24}}>
+            <AspectRatio aspectRatio={"52.5%"}>
+              <Carousel>
+                <img src={image1} alt={""}/>
+                <img src={image2} alt={""}/>
+                <img src={image3} alt={""}/>
+              </Carousel>
+            </AspectRatio>
           </Col>
-          <Col xs={12} md={6} lg={4} id={"landing-video"}>
+          <Col xs={12} md={6} lg={4} lgOffset={1} id={"landing-video"}>
             <YoutubeVideo container={"landing-video"} videoUrl={"https://www.youtube.com/embed/Q-eGqkL2AXQ"}/>
           </Col>
         </Row>
