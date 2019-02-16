@@ -5,8 +5,7 @@ import '../styles/team.css';
 import workshop from '../images/workshop.jpg';
 import software from '../images/software.jpg';
 import cad from '../images/cad.jpg';
-import TeamCard from "./TeamCard";
-import {Col, Row} from "react-flexbox-grid";
+import {Row} from "react-flexbox-grid";
 import Card from "./Card";
 
 class Team extends Component {

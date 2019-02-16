@@ -7,7 +7,6 @@ import Team from "./Team";
 import First from "./First";
 import Contact from "./Contact";
 import Sponsors from "./Sponsors";
-import Media from "./Media";
 
 class App extends Component {
     render() {

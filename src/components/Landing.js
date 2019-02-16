@@ -22,8 +22,6 @@ class Landing extends Component {
   }
 
   render() {
-    let {height, width} = this.state;
-
     return (
       <div id={"landing"}>
         <Row>

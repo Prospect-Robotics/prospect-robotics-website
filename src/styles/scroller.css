@@ -34,6 +34,12 @@
     position: fixed;
     z-index: 10;
     top: 30%;
+
+    transition: transform var(--page-transtion-time);
+}
+
+.page-location.hidden {
+    transform: translateX(-200px);
 }
 
 .page-location img, .page-location .name {
@@ -99,6 +105,10 @@
 @media (max-width: 992px) {
     .page {
         padding-left: 48px;
+    }
+
+    .page-location.hidden {
+        transform: translateX(-56px);
     }
 
     .page-location img, .page-location .name {

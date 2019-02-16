@@ -1,5 +1,5 @@
 import React from 'react';
-import {Col, Row} from "react-flexbox-grid";
+import {Col} from "react-flexbox-grid";
 import AspectRatio from "./AspectRatio";
 
 import '../styles/card.css';

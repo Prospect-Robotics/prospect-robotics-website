@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 
 import '../styles/meet.css';
 
-import meet from '../images/meet.jpg';
 import jesse from '../images/jesse.jpg';
 import kyle from '../images/kyle.jpg';
 import siddharth from '../images/siddharth.jpg';

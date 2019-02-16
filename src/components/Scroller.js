@@ -9,6 +9,8 @@ export default class Scroller extends Component {
   constructor(props) {
     super(props);
 
+    this.pageTopDistances = [];
+
     this.state = {
       currentPage: 0
     }
@@ -17,24 +19,51 @@ export default class Scroller extends Component {
   previousScrollY = 0;
 
   handleScroll() {
+    console.log(window.scrollY, this.pageTopDistances);
 
-    this.setState({
-      currentPage: Math.floor(window.scrollY / window.innerHeight)
-    });
+    let length = this.pageTopDistances.length;
+    for (let i = 0; i < length; i++) {
+      if (window.scrollY >= this.pageTopDistances[length - 1]) {
+        this.setState({
+          currentPage: length - 1
+        });
+        break;
+      } else if (window.scrollY <= this.pageTopDistances[i]) {
+        this.setState({
+          currentPage: i - 1
+        });
+        break;
+      }
+    }
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll.bind(this));
   }
 
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.handleScroll.bind(this));
+  }
+
+  addTopDistance(ref, i) {
+    if (ref != null) {
+      let rect = ref.getBoundingClientRect();
+      let docEl = document.documentElement;
+      this.pageTopDistances[i] = rect.top + (window.pageYOffset || docEl.scrollTop || 0);
+    }
+  }
+
   render() {
+    console.log(this.state.currentPage);
     return (
       <div>
         {this.props.pages.map((page, i) => {
-            return <div key={i} className="page" id={page.id + "-page"}>{page.component}</div>
+            return <div key={i} className="page" id={page.id + "-page"} ref={(ref) => {
+              this.addTopDistance(ref, i)
+            }}>{page.component}</div>
           }
         )}
-        <div className={"page-location"}>
+        <div className={"page-location " + (this.state.currentPage <= 0 ? "hidden" : "")}>
           <img src={logo} alt=""/>
           {this.props.pages.map((page, i) => {
             if (i !== 0)

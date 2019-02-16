@@ -33,7 +33,7 @@ class Sponsors extends Component {
           <Row center="xs" middle="xs" key={i}>
             {sponsorRow.map((sponsorImg, i) => (
               <Col xs={12 / sponsorRow.length}>
-                <img src={"/sponsors/" + sponsorImg} key={i} style={{width: "100%"}}/>
+                <img src={"/sponsors/" + sponsorImg} key={i} style={{width: "100%"}} alt={""}/>
               </Col>
             ))}
           </Row>

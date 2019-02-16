@@ -10,8 +10,8 @@ import {Col, Row} from "react-flexbox-grid";
 import AspectRatio from "./AspectRatio";
 
 class Contact extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       visible: false
