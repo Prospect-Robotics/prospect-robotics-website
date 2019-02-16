@@ -15,8 +15,7 @@ export default class YoutubeVideo extends Component {
   }
 
   onResize() {
-    let width = this.container.offsetWidth;
-    console.log(this.container.offsetWidth);
+    let width = this.container.offsetWidth - 16;
     this.setState({
       height: width * (9 / 16),
       width

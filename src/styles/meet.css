@@ -45,6 +45,7 @@
 @media (max-width: 568px) {
     #meet {
         padding-left: 16px;
+        padding-right: 16px;
     }
 
     #meet h3 {

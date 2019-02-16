@@ -13,4 +13,8 @@
     .portrait img {
         margin-bottom: 0;
     }
+
+    .portrait h3, p {
+        margin: 4px;
+    }
 }

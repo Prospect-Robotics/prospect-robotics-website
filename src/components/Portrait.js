@@ -5,7 +5,7 @@ import {Col, Row} from "react-flexbox-grid";
 
 const Portrait = ({imageSrc, name, description, style}) => (
   <Row className={"portrait"} middle="xs" style={style}>
-    <Col xs={4} lg={12}>
+    <Col xs={4} lg={12} style={{padding: 0}}>
       <img src={imageSrc} alt={name}/>
     </Col>
     <Col xs={8} lg={12} className={"portrait-text"}>

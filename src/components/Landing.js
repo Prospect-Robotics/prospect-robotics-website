@@ -11,8 +11,6 @@ import image2 from '../images/media/20180331-IMG_5836.jpg';
 import image3 from '../images/media/20180406-IMG_8291.jpg';
 import AspectRatio from "./AspectRatio";
 
-// todo use nuka-coursel
-
 class Landing extends Component {
   constructor(props) {
     super(props);
@@ -48,8 +46,8 @@ class Landing extends Component {
           </Col>
         </Row>
         <Row style={{marginTop: 48}}>
-          <Col xs={12} md={6} lg={4} lgOffset={3} id={"landing-gallery"} style={{marginBottom: 24}}>
-            <AspectRatio aspectRatio={"52.5%"}>
+          <Col xs={12} md={6} id={"landing-gallery"} style={{marginBottom: 24}}>
+            <AspectRatio aspectRatio={"56.25%"}>
               <Carousel>
                 <img src={image1} alt={""}/>
                 <img src={image2} alt={""}/>
@@ -57,7 +55,7 @@ class Landing extends Component {
               </Carousel>
             </AspectRatio>
           </Col>
-          <Col xs={12} md={6} lg={4} lgOffset={1} id={"landing-video"}>
+          <Col xs={12} md={6} id={"landing-video"}>
             <YoutubeVideo container={"landing-video"} videoUrl={"https://www.youtube.com/embed/Q-eGqkL2AXQ"}/>
           </Col>
         </Row>
