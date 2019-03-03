@@ -1,18 +1,25 @@
 [
   [
-    "2018 banner proof.png"
+    "banner.svg"
   ],
   [
-    "intuitive surgical.jpg",
-    "moog.svg"
+    "acosta.svg",
+    "prospect.svg"
   ],
   [
-    "Lockheed_Martin_BW.svg",
-    "BAE_Systems_logo.svg"
+    "apple.svg",
+    "google.svg"
   ],
   [
-    "Nvidia_logo.svg",
-    "Western_Digital_logo.svg",
-    "acosta2.svg"
+    "solidworks.svg",
+    "kla-foundation.svg"
+  ],
+  [
+    "brin_wojcicki.svg",
+    "lockheed.svg"
+  ],
+  [
+    "prospect-ptsa.svg",
+    "trial-and-error.svg"
   ]
 ]
