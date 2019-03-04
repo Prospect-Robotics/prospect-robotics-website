@@ -25,6 +25,20 @@
     max-height: 384px;
 }
 
+.sponsors-images .card {
+    max-height: 0;
+    opacity: 0;
+
+    transition: 800ms all;
+
+    overflow: hidden;
+}
+
+.sponsors-images.expand .card {
+    max-height: 130vh;
+    opacity: 1;
+}
+
 @media (max-width: 768px) {
     #sponsors {
         padding: 48px 15vw;

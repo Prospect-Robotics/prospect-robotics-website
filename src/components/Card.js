@@ -4,7 +4,7 @@ import AspectRatio from "./AspectRatio";
 
 import '../styles/card.css';
 
-const Card = ({children, aspectRatio, img, header, text, className, ...other}) => (
+const Card = ({children, aspectRatio, img, header, text, ...other}) => (
   <Col {...other}>
     <div className={"card"}>
       {img ? (

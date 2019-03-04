@@ -1,8 +1,5 @@
 [
   [
-    "banner.svg"
-  ],
-  [
     "acosta.svg",
     "prospect.svg"
   ],
@@ -12,14 +9,14 @@
   ],
   [
     "solidworks.svg",
-    "kla-foundation.svg"
+    "kla_foundation.svg"
   ],
   [
     "brin_wojcicki.svg",
-    "lockheed.svg"
+    "lockheed_martin.svg"
   ],
   [
-    "prospect-ptsa.svg",
-    "trial-and-error.svg"
+    "prospect_ptsa.svg",
+    "trial_and_error.svg"
   ]
 ]
