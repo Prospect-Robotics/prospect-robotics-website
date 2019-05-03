@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import '../styles/meet.css';
 
-import jesse from '../images/jesse.jpg';
+import grady from '../images/grady.jpg';
 import kyle from '../images/kyle.jpg';
 import siddharth from '../images/siddharth.jpg';
 import annie from '../images/annie.jpg';
@@ -35,16 +35,16 @@ class Meet extends Component {
         <h1>Meet the Gearheads</h1>
         <Row className={"portraits"}>
           <Col xs={12} lg={3}>
-            <Portrait imageSrc={jesse} name={"Jesse Dendy"} description={"President of Prospect Robotics"}/>
+            <Portrait imageSrc={kyle} name={"Kyle Schumacher"} description={"President of Prospect Robotics"}/>
           </Col>
           <Col xs={12} lg={3}>
-            <Portrait imageSrc={kyle} name={"Kyle Schumacher"} description={"Vice-President of Prospect Robotics"}/>
-          </Col>
-          <Col xs={12} lg={3}>
-            <Portrait imageSrc={siddharth} name={"Siddharth Singh"} description={"Secretary of Prospect Robotics"}/>
+            <Portrait imageSrc={siddharth} name={"Siddharth Singh"} description={"Vice-President of Prospect Robotics"}/>
           </Col>
           <Col xs={12} lg={3}>
             <Portrait imageSrc={annie} name={"Annie Lee"} description={"Treasurer of Prospect Robotics"}/>
+          </Col>
+          <Col xs={12} lg={3}>
+            <Portrait imageSrc={grady} name={"Grady Whelan"} description={"Secretary of Prospect Robotics"}/>
           </Col>
         </Row>
       </div>

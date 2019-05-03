@@ -29,13 +29,13 @@
     max-height: 0;
     opacity: 0;
 
-    transition: 800ms all;
+    transition: 1200ms all;
 
     overflow: hidden;
 }
 
 .sponsors-images.expand .card {
-    max-height: 130vh;
+    max-height: 200vh;
     opacity: 1;
 }
 
