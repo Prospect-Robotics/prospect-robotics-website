@@ -2,15 +2,16 @@ import React, {Component} from 'react';
 
 import '../styles/meet.css';
 
-import grady from '../images/grady.jpg';
-import kyle from '../images/kyle.jpg';
-import siddharth from '../images/siddharth.jpg';
-import annie from '../images/annie.jpg';
-
 import Portrait from "./Portrait";
 import {Col, Row} from "react-flexbox-grid";
 
+import config from '../config.json';
+import {GlobalContext} from "../index";
+import AllMembers from "./AllMembers";
+
 class Meet extends Component {
+  static contextType = GlobalContext;
+
   constructor(props) {
     super(props);
 
@@ -20,35 +21,52 @@ class Meet extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', function () {
-      if (Math.floor((window.scrollY + (window.innerHeight / 2)) / window.innerHeight) >= 1) {
+
+    fetch(config.server + '/memberImages')
+      .then(response => {
+        return response.json();
+      })
+      .then(memberImages => {
         this.setState({
-          visible: true
-        })
-      }
-    }.bind(this));
+          memberImages
+        });
+      });
   }
 
   render() {
     return (
       <div id={"meet"} className={this.state.visible ? "visible" : ""}>
         <h1>Meet the Gearheads</h1>
-        <Row className={"portraits"}>
-          <Col xs={12} lg={3}>
-            <Portrait imageSrc={kyle} name={"Kyle Schumacher"} description={"President of Prospect Robotics"}/>
-          </Col>
-          <Col xs={12} lg={3}>
-            <Portrait imageSrc={siddharth} name={"Siddharth Singh"} description={"Vice-President of Prospect Robotics"}/>
-          </Col>
-          <Col xs={12} lg={3}>
-            <Portrait imageSrc={annie} name={"Annie Lee"} description={"Treasurer of Prospect Robotics"}/>
-          </Col>
-          <Col xs={12} lg={3}>
-            <Portrait imageSrc={grady} name={"Grady Whelan"} description={"Secretary of Prospect Robotics"}/>
-          </Col>
+        <GlobalContext.Consumer>
+          {({memberImages}) => (
+            <Row className={"portraits"}>
+              <Col xs={12} lg={3}>
+                <Portrait imageSrc={config.server + memberImages.president.src} name={memberImages.president.name}
+                          description={memberImages.president.description}/>
+              </Col>
+              <Col xs={12} lg={3}>
+                <Portrait imageSrc={config.server + memberImages.vicePresident.src} name={memberImages.vicePresident.name}
+                          description={memberImages.vicePresident.description}/>
+              </Col>
+              <Col xs={12} lg={3}>
+                <Portrait imageSrc={config.server + memberImages.treasurer.src} name={memberImages.treasurer.name}
+                          description={memberImages.treasurer.description}/>
+              </Col>
+              <Col xs={12} lg={3}>
+                <Portrait imageSrc={config.server + memberImages.secretary.src} name={memberImages.secretary.name}
+                          description={memberImages.secretary.description}/>
+              </Col>
+            </Row>
+          )}
+        </GlobalContext.Consumer>
+        <Row>
+          <button className={"button"} onClick={() => this.setState({
+            visible: !this.state.visible
+          })}>All Members ></button>
         </Row>
+        <AllMembers onClose={() => this.setState({visible: false})} visible={this.state.visible}/>
       </div>
-    )
+    );
   }
 }
 

@@ -36,6 +36,18 @@
     color: rgba(0, 0, 200, 0);
 }
 
+.card.small {
+    border-radius: 8px;
+}
+
+.card.small .card-text {
+    padding: 8px;
+}
+
+.card.border {
+    border: 1px solid #ccc;
+}
+
 @media (max-width: 412px) {
     .card {
         border-radius: 24px;

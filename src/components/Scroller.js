@@ -19,7 +19,7 @@ export default class Scroller extends Component {
   previousScrollY = 0;
 
   handleScroll() {
-    console.log(window.scrollY, this.pageTopDistances);
+    // console.log(window.scrollY, this.pageTopDistances);
 
     let length = this.pageTopDistances.length;
     for (let i = 0; i < length; i++) {
@@ -54,7 +54,7 @@ export default class Scroller extends Component {
   }
 
   render() {
-    console.log(this.state.currentPage);
+    // console.log(this.state.currentPage);
     return (
       <div>
         {this.props.pages.map((page, i) => {

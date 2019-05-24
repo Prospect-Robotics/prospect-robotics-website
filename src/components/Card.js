@@ -4,9 +4,9 @@ import AspectRatio from "./AspectRatio";
 
 import '../styles/card.css';
 
-const Card = ({children, aspectRatio, img, header, text, ...other}) => (
-  <Col {...other}>
-    <div className={"card"}>
+const Card = ({children, aspectRatio, small, border, img, header, text, ...props}) => {
+  return <Col {...props}>
+    <div className={"card" + (small ? " small" : "")+ (border ? " border" : "")}>
       {img ? (
         <AspectRatio aspectRatio={aspectRatio || "66.6%"}>
           <img src={img} alt=""/>
@@ -17,7 +17,6 @@ const Card = ({children, aspectRatio, img, header, text, ...other}) => (
         {children}
       </div>
     </div>
-  </Col>
-);
-
+  </Col>;
+};
 export default Card;

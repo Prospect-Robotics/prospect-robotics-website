@@ -1,0 +1,85 @@
+.all-members-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background: rgba(0,0,0,1);
+    opacity: 0;
+
+    transition: 300ms opacity;
+    pointer-events: none;
+    z-index: 1000000000000;
+}
+
+.all-members-container.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.all-members {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 10000000;
+
+    height: calc(100% - 64px);
+    width: calc(100% - 64px);
+
+    background: white;
+    color: black;
+
+    padding: 32px 32px 0;
+
+    overflow: auto;
+}
+
+.all-members .button {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    line-height: 24px;
+    text-align: center;
+}
+
+.all-members h3, p {
+    text-align: center;
+}
+
+.all-members h3 {
+    margin-bottom: 0;
+}
+
+.all-members p {
+    margin-top: 0;
+}
+
+.all-members img {
+    border-radius: 50%  ;
+}
+
+.all-members .card {
+    text-align: center;
+}
+
+.all-members-container button {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    border: 0;
+    background: 0;
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    line-height: 32px;
+    text-align: center;
+    font-size: 16px;
+}
