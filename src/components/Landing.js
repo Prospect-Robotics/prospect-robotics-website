@@ -29,18 +29,8 @@ class Landing extends Component {
             <img src={logo} alt="LOGO" style={{width: "100%"}}/>
           </Col>
           <Col xs={12} md={8}>
-            <h1>Prospect Robotics</h1>
+            <h1>Gearheads</h1>
             <h3>FRC 2813</h3>
-            <p>"make it happen" - Jack Taylor</p>
-            <p className={"landing-links"}>
-              <a href="#about">about us</a>
-              <a href="#sponsors" style={{marginLeft: 16}}>sponsors</a>
-              <a href="#team" style={{marginLeft: 16}} id={"landing-team-link"}>departments</a>
-            </p>
-            <p className={"landing-links"}>
-              <a href="#first">first</a>
-              <a href="#contact" style={{marginLeft: 16}}>contact us</a>
-            </p>
           </Col>
         </Row>
         <Row style={{marginTop: 48}}>
