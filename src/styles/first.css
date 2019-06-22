@@ -56,6 +56,6 @@
 
 @media (max-width: 768px) {
     #first {
-        padding: 20vh 48px 0;
+        padding: 20vh 48px 0 !important;
     }
 }

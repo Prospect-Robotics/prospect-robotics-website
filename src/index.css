@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 
+@font-face {
+    font-family: 'Gilroy';
+    /*noinspection CssUnknownTarget*/
+    src: url('/fonts/Gilroy-ExtraBold.ttf')  format('truetype');
+}
+
 :root {
     --accent-color: #10276B;
     --page-transtion-time: 300ms;
@@ -20,14 +26,22 @@ body {
 
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     overflow-x: hidden;
 
     background-color: #000000;
     color: #ffffff;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+html.no-scroll {
+    overflow: hidden;
+}
+
+h1, h3 {
+    font-family: 'Gilroy';
+}
+
+p {
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 100;
 }

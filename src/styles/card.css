@@ -29,11 +29,22 @@
     font-weight: 500;
 
     font-size: 17px;
-    font-style: italic;
 }
 
 .card a {
     color: rgba(0, 0, 200, 0);
+}
+
+.card.small {
+    border-radius: 8px;
+}
+
+.card.small .card-text {
+    padding: 8px;
+}
+
+.card.border {
+    border: 1px solid #ccc;
 }
 
 @media (max-width: 412px) {

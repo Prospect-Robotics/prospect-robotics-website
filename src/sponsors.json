@@ -1,22 +1,12 @@
 [
-  [
-    "acosta.svg",
-    "prospect.svg"
-  ],
-  [
-    "apple.svg",
-    "google.svg"
-  ],
-  [
-    "solidworks.svg",
-    "kla_foundation.svg"
-  ],
-  [
-    "brin_wojcicki.svg",
-    "lockheed_martin.svg"
-  ],
-  [
-    "prospect_ptsa.svg",
-    "trial_and_error.svg"
-  ]
+  "acosta.svg",
+  "prospect.svg",
+  "apple.svg",
+  "google.svg",
+  "solidworks.svg",
+  "kla_foundation.svg",
+  "brin_wojcicki.svg",
+  "lockheed_martin.svg",
+  "prospect_ptsa.svg",
+  "trial_and_error.svg"
 ]

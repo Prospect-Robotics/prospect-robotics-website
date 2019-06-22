@@ -2,19 +2,8 @@
     background-image: url('../images/team.jpg');
 }
 
-#team {
-    position: relative;
-    height: 100%;
-    width: 100%;
-
-    color: white;
-
-    padding: 16vh 8vw 8vh 48px;
-}
-
 #team h3, p {
     font-weight: 500;
-    font-style: italic;
 }
 
 #team .team-cards {

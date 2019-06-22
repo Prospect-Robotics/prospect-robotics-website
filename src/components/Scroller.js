@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import '../styles/scroller.css';
 import logo from '../images/logo.svg';
+import App from "./App";
 
 // noinspection SpellCheckingInspection
 export default class Scroller extends Component {
@@ -19,16 +20,16 @@ export default class Scroller extends Component {
   previousScrollY = 0;
 
   handleScroll() {
-    console.log(window.scrollY, this.pageTopDistances);
+    // console.log(window.scrollY, this.pageTopDistances);
 
     let length = this.pageTopDistances.length;
     for (let i = 0; i < length; i++) {
-      if (window.scrollY >= this.pageTopDistances[length - 1]) {
+      if (window.scrollY >= this.pageTopDistances[length - 1] - 64) {
         this.setState({
           currentPage: length - 1
         });
         break;
-      } else if (window.scrollY <= this.pageTopDistances[i]) {
+      } else if (window.scrollY <= this.pageTopDistances[i] - 64) {
         this.setState({
           currentPage: i - 1
         });
@@ -54,7 +55,7 @@ export default class Scroller extends Component {
   }
 
   render() {
-    console.log(this.state.currentPage);
+    // console.log(this.state.currentPage);
     return (
       <div>
         {this.props.pages.map((page, i) => {
@@ -67,7 +68,7 @@ export default class Scroller extends Component {
           <img src={logo} alt=""/>
           {this.props.pages.map((page, i) => {
             if (i !== 0)
-              return (<div className={"identifier " + (this.state.currentPage === i ? "current" : "")} key={i}>
+              return (<div className={"identifier " + (this.state.currentPage === i ? "current" : "")} key={i} onClick={() => App.scrollTo(page.id)}>
                 <div className={"circle"}/>
                 <div className={"name"}>{page.name}</div>
               </div>);
@@ -78,7 +79,3 @@ export default class Scroller extends Component {
     );
   }
 }
-
-// <ScrollableAnchor id={page.anchor} key={i}>
-//                 <div className={"page"}>{page.component}</div>
-//               </ScrollableAnchor>
