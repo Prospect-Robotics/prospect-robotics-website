@@ -9,19 +9,13 @@
 
 #landing h1 {
     margin: 0;
-    font-size: 7vw;
+    font-size: 6em;
     font-weight: bold;
 }
 
 #landing h3 {
     margin: 0;
-    font-size: 5.5vw;
-}
-
-#landing img {
-    display: block;
-    max-width: 480px;
-    margin-left: auto;
+    font-size: 60px;
 }
 
 #landing p {
@@ -34,13 +28,17 @@
     color: white;
 }
 
-#landing-links {
-    text-align: center;
+.landing-links {
+    display: block;
 }
 
-@media (max-width: 1380px) {
-    #landing-links {
-        text-align: left;
+@media (min-width: 1520px) {
+    .landing-links {
+        display: inline-block;
+    }
+
+    .landing-links:last-child {
+        margin-left: 16px;
     }
 }
 

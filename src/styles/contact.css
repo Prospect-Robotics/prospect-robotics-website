@@ -12,11 +12,6 @@
     padding: 10vh 200px 10vh 0;
 }
 
-#contact .contact-content {
-    max-width: 720px;
-    margin: 0 auto;
-}
-
 #contact .text {
     position: absolute;
     height: 70vh;
@@ -27,10 +22,4 @@
 
 #contact h3, p {
     font-weight: 500;
-}
-
-@media (max-width: 768px) {
-    #contact {
-        padding: 16vh 48px 8vh 0;
-    }
 }

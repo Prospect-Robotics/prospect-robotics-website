@@ -10,18 +10,6 @@
     align-items: stretch;
 }
 
-#team .team-cards > div {
-    margin-top: 16px;
-}
-
-@media (min-width: 1720px) {
-    #team .team-cards > div {
-        flex-basis: 25% !important;
-        max-width: 25% !important;
-    }
-}
-
-
 @media (max-width: 768px) {
     #team {
         padding: 16vh 48px 8vh 0;

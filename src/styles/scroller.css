@@ -28,9 +28,6 @@
     width: 100%;
 
     z-index: 5;
-}
-
-.page > div:not(.no-padding) {
     padding: 16vh 8vw 8vh 48px;
 }
 
@@ -123,3 +120,8 @@
     }
 }
 
+@media (max-width: 768px) {
+    .page > div {
+        padding: 16vh 48px 8vh 0 !important;
+    }
+}
