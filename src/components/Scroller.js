@@ -63,13 +63,6 @@ export default class Scroller extends Component {
 
     return (
       <div>
-        {this.props.pages.map((page, i) => {
-
-            return <div key={i} className="page" id={page.id + "-page"} ref={(ref) => {
-              this.addTopDistance(ref, i)
-            }}>{page.component}</div>
-          }
-        )}
         <div className={"page-location " + (this.state.currentPage <= hidePageIndex ? "hidden" : "")}>
           <img src={logo} alt=""/>
           {this.props.pages.map((page, i) => {
@@ -81,6 +74,13 @@ export default class Scroller extends Component {
             return null;
           })}
         </div>
+        {this.props.pages.map((page, i) => {
+
+            return <div key={i} className="page" id={page.id + "-page"} ref={(ref) => {
+              this.addTopDistance(ref, i)
+            }}>{page.component}</div>
+          }
+        )}
       </div>
     );
   }

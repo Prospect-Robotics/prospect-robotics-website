@@ -61,9 +61,15 @@ class Members extends Component {
           )}
         </GlobalContext.Consumer>
         <Row>
-          <Button onClick={() => this.setState({visible: true})}>All Members ></Button>
+          <Button onClick={() => {
+            document.querySelector('.page-location').classList.add('hidden');
+            this.setState({visible: true})
+          }}>All Members ></Button>
         </Row>
-        <AllMembers onClose={() => this.setState({visible: false})} visible={this.state.visible}/>
+        <AllMembers onClose={() => {
+          document.querySelector('.page-location').classList.remove('hidden');
+          this.setState({visible: false})
+        }} visible={this.state.visible}/>
       </div>
     );
   }
