@@ -27,7 +27,8 @@
 
     width: 100%;
 
-    z-index: 5
+    z-index: 5;
+    padding: 16vh 8vw 8vh 48px;
 }
 
 .page-location {
@@ -115,5 +116,11 @@
         transform: translateX(-50px);
         opacity: 0;
         pointer-events: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .page > div {
+        padding: 16vh 48px 8vh 0 !important;
     }
 }

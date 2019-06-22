@@ -45,15 +45,13 @@ class Sponsors extends Component {
         </Row>
         <Row>
           <Card xs={12} className={"sponsors-images " + (this.state.expand ? "expand" : "")}>
-            {SponsorImages.map((sponsorRow, i) => (
-              <Row center="xs" middle="xs" key={i}>
-                {sponsorRow.map((sponsorImg, i) => (
-                  <Col xs={12 / sponsorRow.length}>
-                    <img src={"/sponsors/" + sponsorImg} key={i} style={{width: "100%"}} alt={""}/>
-                  </Col>
-                ))}
-              </Row>
-            ))}
+            <Row>
+              {SponsorImages.map((sponsorImg, i) => (
+                <Col xs={4} lg={3} key={i}>
+                  <img src={"/sponsors/" + sponsorImg} key={i} style={{width: "100%"}} alt={""}/>
+                </Col>
+              ))}
+            </Row>
           </Card>
         </Row>
         <Row>

@@ -23,12 +23,12 @@ export default class Scroller extends Component {
 
     let length = this.pageTopDistances.length;
     for (let i = 0; i < length; i++) {
-      if (window.scrollY >= this.pageTopDistances[length - 1]) {
+      if (window.scrollY >= this.pageTopDistances[length - 1] - 64) {
         this.setState({
           currentPage: length - 1
         });
         break;
-      } else if (window.scrollY <= this.pageTopDistances[i]) {
+      } else if (window.scrollY <= this.pageTopDistances[i] - 64) {
         this.setState({
           currentPage: i - 1
         });

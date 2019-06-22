@@ -34,6 +34,10 @@
     overflow: hidden;
 }
 
+.sponsors-images .row > div {
+    padding: 16px;
+}
+
 .sponsors-images.expand .card {
     max-height: 200vh;
     opacity: 1;
