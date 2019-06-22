@@ -56,15 +56,21 @@ export default class Scroller extends Component {
 
   render() {
     // console.log(this.state.currentPage);
+    let hidePageIndex = 0;
+    for (let i = 0; i < this.props.pages.length; i++)
+      if (this.props.pages[i].hide)
+        hidePageIndex = i;
+
     return (
       <div>
         {this.props.pages.map((page, i) => {
+
             return <div key={i} className="page" id={page.id + "-page"} ref={(ref) => {
               this.addTopDistance(ref, i)
             }}>{page.component}</div>
           }
         )}
-        <div className={"page-location " + (this.state.currentPage <= 0 ? "hidden" : "")}>
+        <div className={"page-location " + (this.state.currentPage <= hidePageIndex ? "hidden" : "")}>
           <img src={logo} alt=""/>
           {this.props.pages.map((page, i) => {
             if (i !== 0)
