@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 
 import '../styles/scroller.css';
 import logo from '../images/logo.svg';
+import App from "./App";
+import Button from "./Button";
 
 // noinspection SpellCheckingInspection
 export default class Scroller extends Component {
@@ -67,7 +69,7 @@ export default class Scroller extends Component {
           <img src={logo} alt=""/>
           {this.props.pages.map((page, i) => {
             if (i !== 0)
-              return (<div className={"identifier " + (this.state.currentPage === i ? "current" : "")} key={i}>
+              return (<div className={"identifier " + (this.state.currentPage === i ? "current" : "")} key={i} onClick={() => App.scrollTo(page.id)}>
                 <div className={"circle"}/>
                 <div className={"name"}>{page.name}</div>
               </div>);

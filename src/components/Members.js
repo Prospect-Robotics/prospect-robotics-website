@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import '../styles/meet.css';
+import '../styles/members.css';
 
 import Portrait from "./Portrait";
 import {Col, Row} from "react-flexbox-grid";
@@ -8,8 +8,9 @@ import {Col, Row} from "react-flexbox-grid";
 import config from '../config.json';
 import {GlobalContext} from "../index";
 import AllMembers from "./AllMembers";
+import Button from "./Button";
 
-class Meet extends Component {
+class Members extends Component {
   static contextType = GlobalContext;
 
   constructor(props) {
@@ -35,7 +36,7 @@ class Meet extends Component {
 
   render() {
     return (
-      <div id={"meet"} className={this.state.visible ? "visible" : ""}>
+      <div id={"members"} className={this.state.visible ? "visible" : ""}>
         <h1>Meet the Gearheads</h1>
         <GlobalContext.Consumer>
           {({memberImages}) => (
@@ -60,9 +61,7 @@ class Meet extends Component {
           )}
         </GlobalContext.Consumer>
         <Row>
-          <button className={"button"} onClick={() => this.setState({
-            visible: !this.state.visible
-          })}>All Members ></button>
+          <Button onClick={() => this.setState({visible: true})}>All Members ></Button>
         </Row>
         <AllMembers onClose={() => this.setState({visible: false})} visible={this.state.visible}/>
       </div>
@@ -70,4 +69,4 @@ class Meet extends Component {
   }
 }
 
-export default Meet;
+export default Members;

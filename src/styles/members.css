@@ -1,8 +1,8 @@
-#meet-page {
-    background-image: url('../images/meet.jpg')
+#members-page {
+    background-image: url('../images/members.jpg')
 }
 
-#meet {
+#members {
     position: relative;
     max-width: 1280px;
     width: 100%;
@@ -11,47 +11,47 @@
     margin-left: auto;
 }
 
-#meet h3, p {
+#members h3, p {
     font-weight: 500;
 }
 
-#meet h3 {
+#members h3 {
     font-size: 2em;
 }
 
-#meet p {
+#members p {
     font-size: 1em;
 }
 
 @media (max-width: 992px) {
-    #meet {
+    #members {
         padding-left: 24vw;
     }
 
-    #meet h3 {
+    #members h3 {
         font-size: 1.4em;
     }
 
-    #meet p {
+    #members p {
         font-size: 0.9em;
     }
 
-    #meet .row {
+    #members .row {
         margin: 16px 0;
     }
 }
 
 @media (max-width: 568px) {
-    #meet {
+    #members {
         padding-left: 16px;
         padding-right: 16px;
     }
 
-    #meet h3 {
+    #members h3 {
         font-size: 1.4em;
     }
 
-    #meet p {
+    #members p {
         font-size: 0.9em;
     }
 }
