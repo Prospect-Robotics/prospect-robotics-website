@@ -47,7 +47,7 @@
 }
 
 .page-location img, .page-location .name {
-    transition: all  var(--page-transtion-time);
+    transition: all var(--page-transtion-time);
     transform: translateX(0);
     opacity: 1;
 }
@@ -112,6 +112,10 @@
         padding-left: 48px;
     }
 
+    .page-location {
+        pointer-events: none;
+    }
+
     .page-location.hidden {
         transform: translateX(-56px);
     }
@@ -119,7 +123,6 @@
     .page-location img, .page-location .name {
         transform: translateX(-50px);
         opacity: 0;
-        pointer-events: none;
     }
 }
 
