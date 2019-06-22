@@ -25,22 +25,22 @@ class Landing extends Component {
             <img src={logo} alt="LOGO" style={{width: "100%"}}/>
           </Col>
           <Col xs={12} md={8}>
-            <h1>Gear heads</h1>
+            <h1>Gear Heads</h1>
             <h3>FRC 2813</h3>
           </Col>
         </Row>
         <Row style={{marginTop: 48}}>
-          <Col xs={12} md={6} id={"landing-gallery"} style={{marginBottom: 24}}>
+          <Col xs={12} md={6} id={"landing-links"} style={{marginBottom: 24}}>
             <Button type={'underline'} onClick={() => App.scrollTo('members')}>
               Members
             </Button>
-            <Button type={'underline'}  onClick={() => App.scrollTo('sponsors')}>
+            <Button type={'underline'} onClick={() => App.scrollTo('sponsors')}>
               Sponsors
             </Button>
-            <Button type={'underline'}  onClick={() => App.scrollTo('teams')}>
+            <Button type={'underline'} onClick={() => App.scrollTo('teams')}>
               Teams
             </Button>
-            <Button type={'underline'}  onClick={() => App.scrollTo('contact')}>
+            <Button type={'underline'} onClick={() => App.scrollTo('contact')}>
               Contact
             </Button>
           </Col>
