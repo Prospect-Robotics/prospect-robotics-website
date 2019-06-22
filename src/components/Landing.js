@@ -25,7 +25,7 @@ class Landing extends Component {
             <img src={logo} alt="LOGO" style={{width: "100%"}}/>
           </Col>
           <Col xs={12} md={8}>
-            <h1>Gearheads</h1>
+            <h1>Gear heads</h1>
             <h3>FRC 2813</h3>
           </Col>
         </Row>
