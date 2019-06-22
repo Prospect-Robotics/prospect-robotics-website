@@ -3,7 +3,6 @@ import React, {Component} from 'react';
 import '../styles/scroller.css';
 import logo from '../images/logo.svg';
 import App from "./App";
-import Button from "./Button";
 
 // noinspection SpellCheckingInspection
 export default class Scroller extends Component {
@@ -80,7 +79,3 @@ export default class Scroller extends Component {
     );
   }
 }
-
-// <ScrollableAnchor id={page.anchor} key={i}>
-//                 <div className={"page"}>{page.component}</div>
-//               </ScrollableAnchor>

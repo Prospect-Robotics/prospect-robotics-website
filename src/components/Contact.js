@@ -34,7 +34,7 @@ class Contact extends Component {
         <h1>Contact Us</h1>
         <Card>
           <p style={{marginBottom: 25}}>You can contact us at <a style={{color: "blue"}}
-                                                                 href="mailto:prospectrobotics2813@gmail.com">prospectrobotics2813@gmail.com</a> or
+                                                                 href="mailto:info@team2813.com">info@team2813.com</a> or
             at our social media handles.</p>
 
           <Row>
