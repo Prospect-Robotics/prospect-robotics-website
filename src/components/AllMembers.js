@@ -22,7 +22,7 @@ const AllMembers = ({visible, onClose}) => {
               let member = memberImages.members[memberKey];
 
               return (
-                <Card img={config.server + member.src} xs={6} sm={3} md={2} aspectRatio={"100%"} small={true} key={memberKey}>
+                <Card img={config.server + member.src} xs={6} sm={3} md={2} aspectRatio={"100%"} small={true} key={memberKey} style={{marginTop: 16}}>
                   <b>{member.name}</b>
                   <br/>
                   {member.description}
