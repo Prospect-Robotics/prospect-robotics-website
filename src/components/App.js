@@ -11,7 +11,7 @@ import Info from "../pages/Info";
 
 class App extends Component {
   static scrollTo(id) {
-    document.querySelector(`#${id}`).scrollIntoView({
+    document.querySelector(`#${id}-page`).scrollIntoView({
       behavior: 'smooth'
     });
   }
@@ -28,7 +28,7 @@ class App extends Component {
         }, {
           name: "Sponsors", id: "sponsors", component: <Sponsors/>
         }, {
-          name: "Team Departments", id: "team", component: <Team/>
+          name: "Team Departments", id: "teams", component: <Team/>
         }, {
           name: "About FIRST", id: "first", component: <First/>
         }, {

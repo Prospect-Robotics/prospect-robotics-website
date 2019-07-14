@@ -27,6 +27,7 @@ class Landing extends Component {
           <Col xs={12} md={8}>
             <h1>Gear Heads</h1>
             <h3>FRC 2813</h3>
+            <p>Prospect High School, Saratoga, CA"</p>
           </Col>
         </Row>
         <Row style={{marginTop: 48}}>
