@@ -3,6 +3,9 @@ import React, {Component} from 'react';
 import facebook from '../images/facebook.png';
 import instagram from '../images/instagram.png';
 import twitter from '../images/twitter.png';
+import youtube from '../images/youtube.svg';
+import github from '../images/github.svg';
+import tba from '../images/tba.svg';
 
 import '../styles/contact.css'
 import Card from "../components/Card";
@@ -39,7 +42,7 @@ class Contact extends Component {
               at our social media handles.</p>
 
             <Row>
-              <Col xs={3} style={{maxWidth: 128}}>
+              <Col xs={2} style={{maxWidth: 128}}>
                 <a href="https://www.facebook.com/team2813/" target={"_blank"}>
                   <AspectRatio aspectRatio={"100%"}>
                     <img src={facebook} alt="Facebook" style={{height: "100%", width: "100%"}}/>
@@ -47,7 +50,7 @@ class Contact extends Component {
                 </a>
               </Col>
 
-              <Col xs={3} style={{maxWidth: 128}}>
+              <Col xs={2} style={{maxWidth: 128}}>
                 <a href="https://www.instagram.com/frc2813/" target={"_blank"}>
                   <AspectRatio aspectRatio={"100%"}>
                     <img src={instagram} alt="Instagram" style={{height: "100%", width: "100%"}}/>
@@ -55,10 +58,31 @@ class Contact extends Component {
                 </a>
               </Col>
 
-              <Col xs={3} style={{maxWidth: 128}}>
+              <Col xs={2} style={{maxWidth: 128}}>
                 <a href="https://twitter.com/frc2813" target={"_blank"}>
                   <AspectRatio aspectRatio={"100%"}>
                     <img src={twitter} alt="Twitter" style={{height: "100%", width: "100%"}}/>
+                  </AspectRatio>
+                </a>
+              </Col>
+              <Col xs={2} style={{maxWidth: 128}}>
+                <a href="https://www.youtube.com/channel/UCl6RubttgSbeC4DmkEe6B3Q" target={"_blank"}>
+                  <AspectRatio aspectRatio={"100%"}>
+                    <img src={youtube} alt="YouTube" style={{height: "100%", width: "100%"}}/>
+                  </AspectRatio>
+                </a>
+              </Col>
+              <Col xs={2} style={{maxWidth: 128}}>
+                <a href="https://github.com/Prospect-Robotics" target={"_blank"}>
+                  <AspectRatio aspectRatio={"100%"}>
+                    <img src={github} alt="GitHub" style={{height: "100%", width: "100%"}}/>
+                  </AspectRatio>
+                </a>
+              </Col>
+              <Col xs={2} style={{maxWidth: 128}}>
+                <a href="https://www.thebluealliance.com/team/2813" target={"_blank"}>
+                  <AspectRatio aspectRatio={"100%"}>
+                    <img src={tba} alt="The Blue Alliance" style={{height: "100%", width: "100%"}}/>
                   </AspectRatio>
                 </a>
               </Col>

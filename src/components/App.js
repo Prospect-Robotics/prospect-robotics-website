@@ -22,7 +22,7 @@ class App extends Component {
         {
           name: "Home", id: "landing", component: <Landing/>
         },{
-          name: "Info", id: "info", hide: true, component: <Info/>
+          name: "Blog", id: "info", hide: true, component: <Info/>
         }, {
           name: "Meet the Gearheads", id: "members", component: <Members/>
         }, {

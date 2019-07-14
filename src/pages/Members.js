@@ -37,7 +37,7 @@ class Members extends Component {
   render() {
     return (
       <div id={"members"} className={this.state.visible ? "visible" : ""}>
-        <h1>Meet the Gearheads</h1>
+        <h1>Meet the Gear Heads</h1>
         <GlobalContext.Consumer>
           {({memberImages}) => (
             <Row className={"portraits"}>
