@@ -27,7 +27,7 @@ class Landing extends Component {
           <Col xs={12} md={8}>
             <h1>Gear Heads</h1>
             <h3>FRC 2813</h3>
-            <p>Prospect High School, Saratoga, CA"</p>
+            <p>Prospect High School, Saratoga, CA</p>
           </Col>
         </Row>
         <Row style={{marginTop: 48}}>
@@ -46,7 +46,7 @@ class Landing extends Component {
             </Button>
           </Col>
           <Col xs={12} md={6} id={"landing-video"}>
-            <YoutubeVideo container={"landing-video"} videoUrl={"https://www.youtube.com/embed/Q-eGqkL2AXQ"}/>
+            <YoutubeVideo container={"landing-video"} videoUrl={"https://www.youtube.com/embed/q-uO-jYGaw4"}/>
           </Col>
         </Row>
       </div>

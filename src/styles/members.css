@@ -1,5 +1,6 @@
 #members-page {
-    background-image: url('../images/members.jpg')
+    background-image: url('../images/members.jpg');
+    z-index: 10 !important;
 }
 
 #members {
