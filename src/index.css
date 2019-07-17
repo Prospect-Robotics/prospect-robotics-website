@@ -74,6 +74,43 @@ h3 {
     align-items: flex-start;
 }
 
+body::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-48px);
+    z-index: 10000;
+
+    display: block;
+    height: 48px;
+    width: 100%;
+
+    background: #ff0000;
+    text-align: center;
+    color: white;
+    line-height: 48px;
+    content: "Our new website is at https://team2813.com!";
+
+    animation-name: down-up;
+    animation-duration: 3750ms;
+    animation-delay: 2000ms;
+}
+
+@keyframes down-up {
+    0% {
+        transform: translateY(-48px);
+    }
+    8% {
+        transform: translateY(0);
+    }
+    92% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-48px);
+    }
+}
+
 /* view breakpoints */
 @media (max-width: 1840px) {
     .content-image {

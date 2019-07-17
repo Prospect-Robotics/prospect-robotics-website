@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import '../styles/App.css';
 import Landing from "../pages/Landing";
 import Scroller from "./Scroller";
 import Members from "../pages/Members";
