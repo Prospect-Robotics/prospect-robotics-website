@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "ajv": "6.8.1",
+    "ajv": "6.12.3",
     "express": "^4.16.4",
     "nuka-carousel": "^4.4.7",
     "react": "^16.4.2",
@@ -26,6 +26,6 @@
     "not op_mini all"
   ],
   "resolutions": {
-    "ajv": "6.8.1"
+    "ajv": "6.12.3"
   }
 }
